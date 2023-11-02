@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import './pages/absorb-pointer.dart';
+import 'package:flutter_widgets/pages/absorb_pointer.dart';
+import 'package:flutter_widgets/pages/home.dart';
 
 void main() {
   runApp(const Examples());
@@ -11,13 +12,14 @@ class Examples extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: Center(
-          child: MyAbsorbPointer(),
-        ),
+        body: HomeScreen(),
       ),
+      routes: {
+        MyAbsorbPointer.routeName: (context) => const MyAbsorbPointer(),
+      },
     );
   }
 }
