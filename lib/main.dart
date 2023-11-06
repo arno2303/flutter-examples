@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:flutter_widgets/pages/absorb_pointer.dart';
+import 'package:flutter_widgets/pages/align.dart';
 import 'package:flutter_widgets/pages/home.dart';
 import 'package:flutter_widgets/pages/alert_dialog.dart';
 
@@ -20,7 +21,8 @@ class Examples extends StatelessWidget {
       ),
       routes: {
         MyAbsorbPointer.routeName: (context) => const MyAbsorbPointer(),
-        MyAlertDialog.routeName: (context) => const MyAlertDialog()
+        MyAlertDialog.routeName: (context) => const MyAlertDialog(),
+        MyAlign.routeName: (context) => const MyAlign()
       },
     );
   }
